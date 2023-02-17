@@ -1,0 +1,19 @@
+//A C program to print numbers divisible by n and to find their even sum and odd sum
+#include<stdio.h>
+int main(){
+	int i,n,m,even=0,odd=0;
+	i=1;
+	scanf("%d",&n);
+	while(i<=20){
+	   if(i%n==0)
+		printf("%d\n",i);
+		i++;
+	    if(i%2==0&&i%n==0)
+		even=even+i;
+		if(i%2!=0&&i%n==0)
+		odd=odd+i;		
+	}
+	printf("Even sum=%d\n",even);
+	printf("Odd sum=%d\n",odd);
+	return 0;
+}
