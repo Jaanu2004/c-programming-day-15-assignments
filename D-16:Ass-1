@@ -1,0 +1,12 @@
+//A C program to print multiplication table of n upto 10 steps
+#include<stdio.h>
+int main(){
+	int i,n;
+	i=1;
+	scanf("%d",&n);
+	while(i<=10){
+		printf("%d X %d =%d\n",n,i,i*n);
+		i++;
+	}
+	return 0;
+}
