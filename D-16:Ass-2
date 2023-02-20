@@ -7,11 +7,11 @@ int main(){
 	while(i<=n){
 	   if(i%m==0)
 		printf("%d\n",i);
-		i++;
 	    if(i%2==0 && i%m==0)
 		even=even+i;
 		if(i%2!=0 && i%m==0)
-		odd=odd+i;		
+		odd=odd+i;
+		i++;
 	}
 	printf("Even sum=%d\n",even);
 	printf("Odd sum=%d\n",odd);
