@@ -3,14 +3,14 @@
 int main(){
 	int i,n,m,even=0,odd=0;
 	i=1;
-	scanf("%d",&n);
-	while(i<=20){
-	   if(i%n==0)
+	scanf("%d%d",&n,&m);
+	while(i<=n){
+	   if(i%m==0)
 		printf("%d\n",i);
 		i++;
-	    if(i%2==0&&i%n==0)
+	    if(i%2==0 && i%m==0)
 		even=even+i;
-		if(i%2!=0&&i%n==0)
+		if(i%2!=0 && i%m==0)
 		odd=odd+i;		
 	}
 	printf("Even sum=%d\n",even);
