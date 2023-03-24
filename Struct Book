@@ -5,14 +5,14 @@ struct book
 {
     int price;
     int id;
-    char *title;
-    char *author;
+    char title[20];
+    char author[20];
 
 }b1;
     b1.id=90;
     b1.price=178;  
-    b1.author="Abdul Kalam"; 
-    b1.title="Wings Of Fire"; 
+    strcpy(b1.author,"Abdul Kalam"); 
+    strcpy(b1.title,"Wings Of Fire"); 
 
     printf("ID of the book=%d\nTitle of the Book=%s\nName of the Author=%s\nPrice of the book=%d\n",b1.id,b1.title,b1.author,b1.price);
     return 0;
