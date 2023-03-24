@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<string.h>
 struct student
 {
     int id;
@@ -8,8 +9,7 @@ struct student
 int main(){
     int total;
     float avg;
-    printf("Enter Student Name: ");
-    scanf("%s",s1.name);
+   strcpy(s1.name,"Kiran");
     s1.id=290;
     s1.m1=45;
     s1.m2=49;
