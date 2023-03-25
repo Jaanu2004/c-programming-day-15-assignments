@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<string.h>
+main()
+{
+	struct Student
+	{
+		int id;
+		char name[10];
+		float marks;
+	};
+	int i;
+	struct Student s[3]; // array of structures
+	/*s[0].id=43;
+	s[0].name = "Sriram";
+	s[0].marks=350;
+	
+	s[1].id=73;
+
+	for(i=0;i<3;i++)
+	{
+		scanf("%d",&s[i].id);
+		scanf("%s",s[i].name);
+		scanf("%f",&s[i].marks);
+	}
+	for(i=0;i<3;i++)
+	{
+		printf("\n%d",s[i].id);
+		printf("\n%s",s[i].name);
+		printf("\n%f",s[i].marks);
+	}
+}
