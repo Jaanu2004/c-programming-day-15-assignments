@@ -1,0 +1,44 @@
+#include<stdio.h>
+#include<string.h>
+main()
+{
+	/*struct Date
+	{
+		int dd;
+		int mm;
+		int yy;
+	};
+	struct Employee
+	{
+		int id;
+		char name[10];
+		struct Date dob; // nesting of structures
+		float sal;
+	};*/
+	//or
+/*
+	struct Employee
+	{
+		int id;
+		char name[10];
+		struct Date
+		{
+			int dd;
+			int mm;
+			int yy;
+		}dob; // nesting of structures
+		float sal;
+	};
+	
+	//declare structure variable
+	struct Employee e1;
+	//accessing nested structure memebers
+	e1.id=101;
+	strcpy(e1.name,"Sriram");
+	e1.dob.dd=25;
+	e1.dob.mm=8;
+	e1.dob.yy=2000;
+	e1.sal=25000;
+	printf("\n%d,%s,%d-%d-%d,%f",
+	         e1.id,e1.name,e1.dob.dd,e1.dob.mm,e1.dob.yy, e1.sal);
+}
