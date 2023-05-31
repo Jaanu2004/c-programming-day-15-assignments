@@ -1,0 +1,23 @@
+//binary searching of element
+#include<stdio.h>
+int main(){
+  int arr[]={1,2,3,4,5,6,7};
+  int len=sizeof(arr)/sizeof(int);
+  int ele,mid,sind=0,eind=len-1;
+  scanf("%d",&ele);
+  void bins(int arr[],int ele,int len);
+  bins(arr,ele,len);}
+ void bins(int arr[],int ele,int len){
+  int sind=0,eind=len-1,mid;
+ 
+  while(sind<=eind){
+ mid=(sind+eind)/2;
+    if(arr[mid]==ele){
+    printf("Loc=%d",mid);
+  break;}
+    if(arr[mid]>ele)
+    eind=mid-1;
+    else
+    sind=mid+1;
+
+  }}
